@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prince P. Cardines | Basketball, Hiking &amp; Camping</title>
+<meta name="description" content="Interactive personal website of Prince P. Cardines: basketball, hiking, camping and travel. Shoot some hoops and climb the mountain!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('hc1-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="hci3.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<div class="welcome" id="welcome" role="note">
+  <span>👋 Hi Sir/Ma'am! You have 45 seconds. Try shooting a hoop first! 🏀</span>
+  <button id="welcomeClose" aria-label="Dismiss welcome message">✕</button>
+</div>
+
+<nav class="nav">
+  <a class="logo" href="#home" aria-label="Prince P. Cardines, home">🏀 <span class="full" data-name>Prince P. Cardines</span><span class="ini" aria-hidden="true">PPC</span></a>
+  <div class="timer" id="timer" aria-label="45 second visit timer"><span aria-hidden="true">⏱</span><b id="timerText">45</b><span>s</span></div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#travel">Travel</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#hoops">Hoops</a>
+    <a href="#play">Fun Zone</a>
+    <a href="#contact" class="pill">Contact me</a>
+    <button id="themeBtn" class="theme" aria-label="Toggle light or dark theme">🌙</button>
+  </div>
+</nav>
+
+<!-- ================= HERO: INTRODUCTION ================= -->
+<header id="home" class="hero">
+  <button class="float f1" type="button" aria-label="Secret basketball">🏀</button>
+  <button class="float f2" type="button" aria-label="Secret tent">⛺</button>
+  <button class="float f3" type="button" aria-label="Secret hiking boot">🥾</button>
+
+  <div class="hero-text">
+    <p class="eyebrow">🏀 Basketball &middot; ⛰️ Hiking &middot; ⛺ Camping</p>
+    <h1>Hi, I'm<br><span class="name" data-name>Prince P. Cardines</span></h1>
+    <p class="role">I'm a <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+    <p class="lead"><strong>Welcome to my interactive website!</strong> This is not a boring r&eacute;sum&eacute;. It's a little playground about the things I love most: shooting hoops on the court, hiking up mountains, camping under the stars and travelling to new places.</p>
+    <p class="lead">Scroll down to <strong>shoot a basketball</strong>, watch a hiker <strong>climb a mountain</strong> as you scroll, and test what you know. You've got 45 seconds. Let's go! 👉</p>
+
+    <div class="stats">
+      <div><b data-count="4">0</b><span>big passions</span></div>
+      <div><b data-count="100" data-suffix="%">0</b><span>good vibes, always</span></div>
+      <div><b data-count="45" data-suffix="s">0</b><span>to impress you 😉</span></div>
+    </div>
+
+    <div class="cta">
+      <a href="#hoops" class="btn">🏀 Shoot a hoop</a>
+      <a href="#about" class="btn ghost">About me ↓</a>
+    </div>
+  </div>
+
+  <div class="adventure" aria-label="What is inside this website">
+    <h2>Choose your <span class="red">adventure</span></h2>
+    <p>Tap a card to jump in:</p>
+    <div class="tiles">
+      <a class="tile" href="#hoops"><span>🏀</span><b>Shoot Some Hoops</b><small>Drag, aim and score</small></a>
+      <a class="tile" href="#travel"><span>📸</span><b>My Adventures</b><small>Travel &amp; hiking photos</small></a>
+      <a class="tile" href="#questions"><span>🧠</span><b>Quick Questions</b><small>Basketball, hiking &amp; camping</small></a>
+      <a class="tile" href="#play"><span>🎮</span><b>Fun Zone</b><small>Dress-up, quiz &amp; a game</small></a>
+      <a class="tile wide" href="#about"><span>🙋</span><b>About <span data-name>Prince P. Cardines</span></b><small>Get to know the person behind the website</small></a>
+    </div>
+    <p class="tip">⛰️ Tip: watch the little mountain at the bottom-right. It climbs as you scroll!</p>
+  </div>
+</header>
+
+<main>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="wrap about reveal">
+    <div class="photo-card" id="photoCard">
+      <!-- Put your picture in the same folder and name it photo.jpg -->
+      <img id="photo" src="photo.jpg" alt="Portrait of Prince P. Cardines">
+      <div class="badge">🏀 Hooper &amp; Hiker</div>
+    </div>
+    <div>
+      <h2 class="title">About <span data-name>Prince P. Cardines</span></h2>
+      <p class="intro"><strong>Hello, I'm <span data-name>Prince P. Cardines</span>!</strong> I'm a college student and someone who feels most alive on a basketball court or halfway up a mountain trail. I love learning new things, meeting new people, and turning every little adventure into a story.</p>
+      <p>Basketball is where I learned teamwork, discipline and how to bounce back after a missed shot. Whether it is a quick game with friends or a serious match, the court is my happy place.</p>
+      <p>Away from the court I love the outdoors: hiking up trails, camping under the stars and travelling to new places. Every adventure teaches me patience, gratitude, and that the best views come after the hardest climbs.</p>
+
+      <h3 class="sub">Fun facts <small>(tap a card)</small></h3>
+      <div class="facts">
+        <div class="flip" tabindex="0"><div class="inner">
+          <div class="face front"><span>🏀</span><p>On the court</p></div>
+          <div class="face back"><p>Always ready for a <b>pickup game</b>.</p></div>
+        </div></div>
+        <div class="flip" tabindex="0"><div class="inner">
+          <div class="face front"><span>🥾</span><p>On the trail</p></div>
+          <div class="face back"><p><b>Slow and steady</b> wins the summit.</p></div>
+        </div></div>
+        <div class="flip" tabindex="0"><div class="inner">
+          <div class="face front"><span>⛺</span><p>At camp</p></div>
+          <div class="face back"><p>Best part: <b>campfire stories</b>.</p></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAVELLING & HIKING (5 photo slots) ================= -->
+<section id="travel" class="section alt">
+  <div class="wrap reveal">
+    <h2 class="title">Travelling &amp; <span class="red">Hiking</span></h2>
+    <p class="muted">Mountains, campsites and new places: this is where I feel the most alive. Tap a photo to see it bigger. (Add <code>place1.jpg</code> to <code>place5.jpg</code> to the folder to show your own pictures.)</p>
+    <div class="gallery" id="gallery"></div>
+    <h3 class="sub">What I always pack</h3>
+    <div class="chips">
+      <span>🥾 Hiking shoes</span><span>🎒 Backpack</span><span>⛺ Tent</span><span>🔦 Headlamp</span>
+      <span>🧭 Compass</span><span>💧 Water bottle</span><span>📸 Camera</span><span>🏀 Basketball</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUESTIONS (before hobbies) ================= -->
+<section id="questions" class="section">
+  <div class="wrap reveal">
+    <h2 class="title">Quick <span class="red">Questions</span></h2>
+    <p class="muted">Before my hobbies, a warm-up! Seven questions about <b>basketball</b>, <b>hiking</b> and <b>camping</b>, the things I love most. How many can you get right?</p>
+    <div class="trivia" id="trivia" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ================= HOBBIES ================= -->
+<section id="hobbies" class="section alt">
+  <div class="wrap reveal">
+    <h2 class="title">Hobbies &amp; <span class="red">Interests</span></h2>
+    <p class="muted">What I love doing when I'm off the clock. Hover or tap a card to peek inside.</p>
+    <div class="hobbies">
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🏀</span><p>Basketball</p></div><div class="face back"><p>My favorite way to recharge and play with friends. Try the hoop game below!</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🥾</span><p>Hiking</p></div><div class="face back"><p>Chasing summits and sunrises. Watch the mountain climb as you scroll.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>⛺</span><p>Camping</p></div><div class="face back"><p>Tents, campfires, stories and a sky full of stars.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🚌</span><p>Travelling</p></div><div class="face back"><p>New places, new food, new people and new stories.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>📸</span><p>Photography</p></div><div class="face back"><p>Capturing the views from every trail and every trip.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🎧</span><p>Music</p></div><div class="face back"><p>Lo-fi and OPM keep every road trip and hike moving.</p></div></div></div>
+    </div>
+    <h3 class="sub">Other things I'm into</h3>
+    <div class="chips">
+      <span>🌅 Sunrises</span><span>🚗 Road trips</span><span>🍜 Street food</span><span>🤝 Teamwork</span>
+      <span>🌲 Nature</span><span>🌌 Stargazing</span><span>🗺️ Exploring new places</span><span>🎮 Gaming with friends</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOOPS ================= -->
+<section id="hoops" class="section">
+  <div class="wrap reveal">
+    <h2 class="title">Shoot Some <span class="red">Hoops</span></h2>
+    <p class="muted">Press the ball and slide your mouse back (or your finger on a phone), then let go. A short dotted line shows where the shot will go. The hoop moves after every basket!</p>
+    <div class="court-card">
+      <div class="court-hud">
+        <span>Score<b id="hScore">0</b></span><span>Streak<b id="hStreak">0</b></span><span>Shots<b id="hShots">0</b></span><span>Best<b id="hBest">0</b></span>
+        <button id="hReset" type="button">↻ Reset</button>
+      </div>
+      <canvas id="court" aria-label="Basketball shooting game. Drag the ball back with your mouse or finger and release to shoot into the hoop."></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FUN ZONE ================= -->
+<section id="play" class="section">
+  <div class="wrap reveal">
+    <h2 class="title">Fun <span class="red">Zone</span></h2>
+    <p class="muted">Three quick things to play with. Psst… try clicking the floating emojis on the first page. 🤫</p>
+    <div class="play-grid">
+
+      <div class="play-card wide dress-card">
+        <h3>Dress the Hiker</h3>
+        <p class="muted">Pick an outfit for the hike! Drag clothes onto the hiker, drag them away to take them off, and turn the hiker around to check your look.</p>
+        <div class="dress">
+          <div class="dress-stage">
+            <div class="dress-top">
+              <div class="d-group" role="group" aria-label="Weather">
+                <button type="button" class="d-btn on" data-wx="sunny">☀️ Sunny</button>
+                <button type="button" class="d-btn" data-wx="rainy">🌧️ Rainy</button>
+                <button type="button" class="d-btn" data-wx="windy">🌬️ Windy</button>
+              </div>
+              <div class="dress-meter"><span>Gear</span><div class="bar"><i id="dFill"></i></div><b id="dCount">0/6</b></div>
+            </div>
+            <canvas id="dressCv" tabindex="0" aria-label="3D hiker. Drag the background to turn the hiker around. Drag worn clothes away from the hiker to take them off. Use the left and right arrow keys to rotate."></canvas>
+            <div class="dress-controls">
+              <button type="button" class="d-btn" id="dLeft" aria-label="Turn left">◀</button>
+              <button type="button" class="d-btn" id="dSpin">🔄 Spin</button>
+              <button type="button" class="d-btn" id="dRight" aria-label="Turn right">▶</button>
+              <button type="button" class="d-btn" id="dRandom">🎲 Random</button>
+              <button type="button" class="d-btn" id="dClear">🧹 Clear</button>
+            </div>
+            <p class="dress-advice" id="dAdvice" aria-live="polite"></p>
+          </div>
+          <div>
+            <div class="closet" id="closet" aria-label="Closet. Click an item to wear it, or drag it onto the hiker."></div>
+          </div>
+        </div>
+        <div class="worn" id="worn" aria-live="polite"></div>
+      </div>
+
+      <div class="play-card">
+        <h3>What kind of traveller are you?</h3>
+        <p class="muted">Answer 3 quick questions.</p>
+        <div class="quiz" id="quiz" aria-live="polite"></div>
+      </div>
+
+      <div class="play-card">
+        <h3>Guess my fact</h3>
+        <p class="muted">Two of these are true about me. One is a lie.</p>
+        <div class="guess" id="guess">
+          <button class="g-btn">I have watched a sunrise from above the clouds.</button>
+          <button class="g-btn" data-lie="1">I once hiked an entire mountain in flip-flops.</button>
+          <button class="g-btn">I can pack a weekend backpack in under 10 minutes.</button>
+          <p id="guessOut">Pick the one you think is the LIE.</p>
+          <button class="g-again" id="guessAgain" hidden>↻ Play again</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="wrap reveal contact">
+    <h2 class="title">Get in <span class="red">touch</span></h2>
+    <p class="muted">Want to know more about me? Say hi!</p>
+    <div class="contact-cards">
+      <a class="c-card" data-email href="#">📧 <span data-email-text>princecardines1@gmail.com</span></a>
+      <a class="c-card" data-facebook href="#" target="_blank" rel="noopener">📘 Prince Parba Cardines</a>
+      <a class="c-card" data-github href="#" target="_blank" rel="noopener">💻 GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span aria-hidden="true">⛰️</span>
+  <p>&copy; <span data-name>Prince P. Cardines</span> &middot; Made with trail dust, code &amp; caffeine.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close photo">✕</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<div class="climb" id="climb">
+  <button type="button" class="c-min" id="climbMin" aria-expanded="true" aria-label="Minimize altitude tracker">–</button>
+  <div class="c-title">⛰️ Altitude tracker</div>
+  <div class="c-body">
+  <svg viewBox="0 0 150 96">
+    <defs><linearGradient id="mtg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c7db0"/><stop offset="1" stop-color="#2a3358"/></linearGradient></defs>
+    <path d="M2 94 L48 38 L64 54 L100 12 L148 94Z" fill="url(#mtg)"/>
+    <path d="M100 12 L88 28 L96 25 L102 31 L108 24 L114 28Z" fill="#fff" opacity=".95"/>
+    <path id="climbTrail" d="M14 90 C 34 86, 38 74, 52 70 S 70 62, 76 50 S 92 34, 100 14" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3 3"/>
+    <path id="climbDone" d="" fill="none" stroke="#e63946" stroke-width="2.6" stroke-linecap="round"/>
+    <text x="100" y="12" font-size="12" text-anchor="middle">🚩</text>
+    <text id="climbHiker" x="14" y="94" font-size="15" text-anchor="middle">🧗</text>
+  </svg>
+  <div class="c-info"><b id="climbAlt">0 m</b><span id="climbLabel" aria-live="off">⛺ Base camp</span></div>
+  <div class="c-bar"><i id="climbBar"></i></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="hci3.js"></script>
+</body>
+</html>
