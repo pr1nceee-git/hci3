@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prince P. Cardines | Basketball, Hiking &amp; Camping</title>
+<meta name="description" content="Interactive personal website of Prince P. Cardines: basketball, hiking, camping and travel. Shoot some hoops and climb the mountain!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('hc1-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="hci3.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<div class="welcome" id="welcome" role="note">
+  <span>👋 Hi Sir/Ma'am! You have 45 seconds. Try shooting a hoop first! 🏀</span>
+  <button id="welcomeClose" aria-label="Dismiss welcome message">✕</button>
+</div>
+
+<nav class="nav">
+  <a class="logo" href="#home" aria-label="Prince P. Cardines, home">🏀 <span class="full" data-name>Prince P. Cardines</span><span class="ini" aria-hidden="true">PPC</span></a>
+  <div class="timer" id="timer" aria-label="45 second visit timer"><span aria-hidden="true">⏱</span><b id="timerText">45</b><span>s</span></div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#travel">Travel</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#hoops">Hoops</a>
+    <a href="#play">Fun Zone</a>
+    <a href="#contact" class="pill">Contact me</a>
+    <button id="themeBtn" class="theme" aria-label="Toggle light or dark theme">🌙</button>
+  </div>
+</nav>
+
+<!-- ================= HERO: INTRODUCTION ================= -->
+<header id="home" class="hero">
+  <button class="float f1" type="button" aria-label="Secret basketball">🏀</button>
+  <button class="float f2" type="button" aria-label="Secret tent">⛺</button>
+  <button class="float f3" type="button" aria-label="Secret hiking boot">🥾</button>
+
+  <div class="hero-text">
+    <p class="eyebrow">🏀 Basketball &middot; ⛰️ Hiking &middot; ⛺ Camping</p>
+    <h1>Hi, I'm<br><span class="name" data-name>Prince P. Cardines</span></h1>
+    <p class="role">I'm a <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+    <p class="lead"><strong>Welcome to my interactive website!</strong> This is not a boring r&eacute;sum&eacute;. It's a little playground about the things I love most: shooting hoops on the court, hiking up mountains, camping under the stars and travelling to new places.</p>
+    <p class="lead">Scroll down to <strong>shoot a basketball</strong>, watch a hiker <strong>climb a mountain</strong> as you scroll, and test what you know. You've got 45 seconds. Let's go! 👉</p>
+
+    <div class="stats">
+      <div><b data-count="4">0</b><span>big passions</span></div>
+      <div><b data-count="100" data-suffix="%">0</b><span>good vibes, always</span></div>
+      <div><b data-count="45" data-suffix="s">0</b><span>to impress you 😉</span></div>
+    </div>
+
+    <div class="cta">
+      <a href="#hoops" class="btn">🏀 Shoot a hoop</a>
+      <a href="#about" class="btn ghost">About me ↓</a>
+    </div>
+  </div>
+
+  <div class="adventure" aria-label="What is inside this website">
+    <h2>Choose your <span class="red">adventure</span></h2>
+    <p>Tap a card to jump in:</p>
+    <div class="tiles">
+      <a class="tile" href="#hoops"><span>🏀</span><b>Shoot Some Hoops</b><small>Drag, aim and score</small></a>
+      <a class="tile" href="#travel"><span>📸</span><b>My Adventures</b><small>Travel &amp; hiking photos</small></a>
+      <a class="tile" href="#questions"><span>🧠</span><b>Quick Questions</b><small>Basketball, hiking &amp; camping</small></a>
+      <a class="tile" href="#play"><span>🎮</span><b>Fun Zone</b><small>Dress-up, quiz &amp; a game</small></a>
+      <a class="tile wide" href="#about"><span>🙋</span><b>About <span data-name>Prince P. Cardines</span></b><small>Get to know the person behind the website</small></a>
+    </div>
+    <p class="tip">⛰️ Tip: watch the little mountain at the bottom-right. It climbs as you scroll!</p>
+  </div>
+</header>
+
+<main>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="wrap about reveal">
+    <div class="photo-card" id="photoCard">
+      <!-- Put your picture in the same folder and name it photo.jpg -->
+      <img id="photo" src="photo.jpg" alt="Portrait of Prince P. Cardines">
+      <div class="badge">🏀 Hooper &amp; Hiker</div>
+    </div>
+    <div>
+      <h2 class="title">About <span data-name>Prince P. Cardines</span></h2>
+      <p class="intro"><strong>Hello, I'm <span data-name>Prince P. Cardines</span>!</strong> I'm a college student and someone who feels most alive on a basketball court or halfway up a mountain trail. I love learning new things, meeting new people, and turning every little adventure into a story.</p>
+      <p>Basketball is where I learned teamwork, discipline and how to bounce back after a missed shot. Whether it is a quick game with friends or a serious match, the court is my happy place.</p>
+      <p>Away from the court I love the outdoors: hiking up trails, camping under the stars and travelling to new places. Every adventure teaches me patience, gratitude, and that the best views come after the hardest climbs.</p>
+
+      <h3 class="sub">Fun facts <small>(tap a card)</small></h3>
+      <div class="facts">
+        <div class="flip" tabindex="0"><div class="inner">
+          <div class="face front"><span>🏀</span><p>On the court</p></div>
+          <div class="face back"><p>Always ready for a <b>pickup game</b>.</p></div>
+        </div></div>
+        <div class="flip" tabindex="0"><div class="inner">
+          <div class="face front"><span>🥾</span><p>On the trail</p></div>
+          <div class="face back"><p><b>Slow and steady</b> wins the summit.</p></div>
+        </div></div>
+        <div class="flip" tabindex="0"><div class="inner">
+          <div class="face front"><span>⛺</span><p>At camp</p></div>
+          <div class="face back"><p>Best part: <b>campfire stories</b>.</p></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAVELLING & HIKING (5 photo slots) ================= -->
+<section id="travel" class="section alt">
+  <div class="wrap reveal">
+    <h2 class="title">Travelling &amp; <span class="red">Hiking</span></h2>
+    <p class="muted">Mountains, campsites and new places: this is where I feel the most alive. Tap a photo to see it bigger. (Add <code>place1.jpg</code> to <code>place5.jpg</code> to the folder to show your own pictures.)</p>
+    <div class="gallery" id="gallery"></div>
+    <h3 class="sub">What I always pack</h3>
+    <div class="chips">
+      <span>🥾 Hiking shoes</span><span>🎒 Backpack</span><span>⛺ Tent</span><span>🔦 Headlamp</span>
+      <span>🧭 Compass</span><span>💧 Water bottle</span><span>📸 Camera</span><span>🏀 Basketball</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUESTIONS (before hobbies) ================= -->
+<section id="questions" class="section">
+  <div class="wrap reveal">
+    <h2 class="title">Quick <span class="red">Questions</span></h2>
+    <p class="muted">Before my hobbies, a warm-up! Seven questions about <b>basketball</b>, <b>hiking</b> and <b>camping</b>, the things I love most. How many can you get right?</p>
+    <div class="trivia" id="trivia" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ================= HOBBIES ================= -->
+<section id="hobbies" class="section alt">
+  <div class="wrap reveal">
+    <h2 class="title">Hobbies &amp; <span class="red">Interests</span></h2>
+    <p class="muted">What I love doing when I'm off the clock. Hover or tap a card to peek inside.</p>
+    <div class="hobbies">
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🏀</span><p>Basketball</p></div><div class="face back"><p>My favorite way to recharge and play with friends. Try the hoop game below!</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🥾</span><p>Hiking</p></div><div class="face back"><p>Chasing summits and sunrises. Watch the mountain climb as you scroll.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>⛺</span><p>Camping</p></div><div class="face back"><p>Tents, campfires, stories and a sky full of stars.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🚌</span><p>Travelling</p></div><div class="face back"><p>New places, new food, new people and new stories.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>📸</span><p>Photography</p></div><div class="face back"><p>Capturing the views from every trail and every trip.</p></div></div></div>
+      <div class="flip big" tabindex="0"><div class="inner"><div class="face front"><span>🎧</span><p>Music</p></div><div class="face back"><p>Lo-fi and OPM keep every road trip and hike moving.</p></div></div></div>
+    </div>
+    <h3 class="sub">Other things I'm into</h3>
+    <div class="chips">
+      <span>🌅 Sunrises</span><span>🚗 Road trips</span><span>🍜 Street food</span><span>🤝 Teamwork</span>
+      <span>🌲 Nature</span><span>🌌 Stargazing</span><span>🗺️ Exploring new places</span><span>🎮 Gaming with friends</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOOPS ================= -->
+<section id="hoops" class="section">
+  <div class="wrap reveal">
+    <h2 class="title">Shoot Some <span class="red">Hoops</span></h2>
+    <p class="muted">Press the ball and slide your mouse back (or your finger on a phone), then let go. A short dotted line shows where the shot will go. The hoop moves after every basket!</p>
+    <div class="court-card">
+      <div class="court-hud">
+        <span>Score<b id="hScore">0</b></span><span>Streak<b id="hStreak">0</b></span><span>Shots<b id="hShots">0</b></span><span>Best<b id="hBest">0</b></span>
+        <button id="hReset" type="button">↻ Reset</button>
+      </div>
+      <canvas id="court" aria-label="Basketball shooting game. Drag the ball back with your mouse or finger and release to shoot into the hoop."></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FUN ZONE ================= -->
+<section id="play" class="section">
+  <div class="wrap reveal">
+    <h2 class="title">Fun <span class="red">Zone</span></h2>
+    <p class="muted">Three quick things to play with. Psst… try clicking the floating emojis on the first page. 🤫</p>
+    <div class="play-grid">
+
+      <div class="play-card wide dress-card">
+        <h3>Dress the Hiker</h3>
+        <p class="muted">Pick an outfit for the hike! Drag clothes onto the hiker, drag them away to take them off, and turn the hiker around to check your look.</p>
+        <div class="dress">
+          <div class="dress-stage">
+            <div class="dress-top">
+              <div class="d-group" role="group" aria-label="Weather">
+                <button type="button" class="d-btn on" data-wx="sunny">☀️ Sunny</button>
+                <button type="button" class="d-btn" data-wx="rainy">🌧️ Rainy</button>
+                <button type="button" class="d-btn" data-wx="windy">🌬️ Windy</button>
+              </div>
+              <div class="dress-meter"><span>Gear</span><div class="bar"><i id="dFill"></i></div><b id="dCount">0/6</b></div>
+            </div>
+            <canvas id="dressCv" tabindex="0" aria-label="3D hiker. Drag the background to turn the hiker around. Drag worn clothes away from the hiker to take them off. Use the left and right arrow keys to rotate."></canvas>
+            <div class="dress-controls">
+              <button type="button" class="d-btn" id="dLeft" aria-label="Turn left">◀</button>
+              <button type="button" class="d-btn" id="dSpin">🔄 Spin</button>
+              <button type="button" class="d-btn" id="dRight" aria-label="Turn right">▶</button>
+              <button type="button" class="d-btn" id="dRandom">🎲 Random</button>
+              <button type="button" class="d-btn" id="dClear">🧹 Clear</button>
+            </div>
+            <p class="dress-advice" id="dAdvice" aria-live="polite"></p>
+          </div>
+          <div>
+            <div class="closet" id="closet" aria-label="Closet. Click an item to wear it, or drag it onto the hiker."></div>
+          </div>
+        </div>
+        <div class="worn" id="worn" aria-live="polite"></div>
+      </div>
+
+      <div class="play-card">
+        <h3>What kind of traveller are you?</h3>
+        <p class="muted">Answer 3 quick questions.</p>
+        <div class="quiz" id="quiz" aria-live="polite"></div>
+      </div>
+
+      <div class="play-card">
+        <h3>Guess my fact</h3>
+        <p class="muted">Two of these are true about me. One is a lie.</p>
+        <div class="guess" id="guess">
+          <button class="g-btn">I have watched a sunrise from above the clouds.</button>
+          <button class="g-btn" data-lie="1">I once hiked an entire mountain in flip-flops.</button>
+          <button class="g-btn">I can pack a weekend backpack in under 10 minutes.</button>
+          <p id="guessOut">Pick the one you think is the LIE.</p>
+          <button class="g-again" id="guessAgain" hidden>↻ Play again</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="wrap reveal contact">
+    <h2 class="title">Get in <span class="red">touch</span></h2>
+    <p class="muted">Want to know more about me? Say hi!</p>
+    <div class="contact-cards">
+      <a class="c-card" data-email href="#"><img class="gm-logo" src="data:image/png;base64,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" alt="" width="24" height="19"> <span data-email-text>princecardines1@gmail.com</span></a>
+      <a class="c-card" data-facebook href="#" target="_blank" rel="noopener"><img class="gm-logo fb-logo" src="data:image/png;base64,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" alt="" width="24" height="24"> Prince Parba Cardines</a>
+      <a class="c-card" data-github href="#" target="_blank" rel="noopener"><img class="gm-logo gh-logo" src="data:image/png;base64,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" alt="" width="24" height="24"> GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span aria-hidden="true">⛰️</span>
+  <p>&copy; <span data-name>Prince P. Cardines</span> &middot; Made with trail dust, code &amp; caffeine.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close photo">✕</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<div class="climb" id="climb">
+  <button type="button" class="c-min" id="climbMin" aria-expanded="true" aria-label="Minimize altitude tracker">–</button>
+  <div class="c-title">⛰️ Altitude tracker</div>
+  <div class="c-body">
+  <svg viewBox="0 0 150 96">
+    <defs><linearGradient id="mtg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c7db0"/><stop offset="1" stop-color="#2a3358"/></linearGradient></defs>
+    <path d="M2 94 L48 38 L64 54 L100 12 L148 94Z" fill="url(#mtg)"/>
+    <path d="M100 12 L88 28 L96 25 L102 31 L108 24 L114 28Z" fill="#fff" opacity=".95"/>
+    <path id="climbTrail" d="M14 90 C 34 86, 38 74, 52 70 S 70 62, 76 50 S 92 34, 100 14" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3 3"/>
+    <path id="climbDone" d="" fill="none" stroke="#e63946" stroke-width="2.6" stroke-linecap="round"/>
+    <text x="100" y="12" font-size="12" text-anchor="middle">🚩</text>
+    <text id="climbHiker" x="14" y="94" font-size="15" text-anchor="middle">🧗</text>
+  </svg>
+  <div class="c-info"><b id="climbAlt">0 m</b><span id="climbLabel" aria-live="off">⛺ Base camp</span></div>
+  <div class="c-bar"><i id="climbBar"></i></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="hci3.js"></script>
+</body>
+</html>
