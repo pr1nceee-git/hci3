@@ -1010,8 +1010,8 @@ $$('.float').forEach(btn => btn.addEventListener('click', () => {
     { name: 'My Favorite Mountain', type: 'hike', file: 'place1.jpg', cap: 'Write where this is and what you remember about it.' },
     { name: 'Trail Adventure', type: 'hike', file: 'place2.jpg', cap: 'The trail with the best view so far.' },
     { name: 'Another Hike', type: 'hike', file: 'place3.jpg', cap: 'Another trail, another great view.' },
-    { name: 'Travel Destination', type: 'travel', file: 'place4.jpg', cap: 'A place I will never forget.' },
-    { name: 'Best View So Far', type: 'travel', file: 'place5.jpg', cap: 'Totally worth the climb.' }
+    { name: 'Travel Destination', type: 'travel', file: 'place4.jpg', cap: 'Lost in the green, found in Bantayan. 🌿' },
+    { name: 'Best View So Far', type: 'travel', file: 'place5.jpg', cap: 'Kitanglad: where clouds meet the trail. ⛰️' }
   ];
   const ICON = { hike: ['⛰️', 'Hike'], camp: ['⛺', 'Camping'], travel: ['🚌', 'Travel'] };
   const COLS = { hike: ['#2f6fe0', '#1f5c4a'], camp: ['#f08a3c', '#6a3c8c'], travel: ['#e63946', '#3a2a7c'] };
